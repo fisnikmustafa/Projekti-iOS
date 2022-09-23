@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19F2200" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Bonus" representedClassName="Bonus" syncable="YES">
+        <attribute name="course" optional="YES" attributeType="String"/>
+        <attribute name="value" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="student" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="bonusPoints" inverseEntity="Student"/>
+    </entity>
+    <entity name="Professor" representedClassName="Professor" syncable="YES">
+        <attribute name="firstCourse" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="secondCourse" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Student" inverseName="professor" inverseEntity="Student"/>
+    </entity>
+    <entity name="Student" representedClassName="Student" syncable="YES">
+        <attribute name="firstCourseAttendance" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="projectPoints" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="secondCourseAttendance" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="bonusPoints" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bonus" inverseName="student" inverseEntity="Bonus"/>
+        <relationship name="professor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Professor" inverseName="students" inverseEntity="Professor"/>
+    </entity>
+    <elements>
+        <element name="Bonus" positionX="9" positionY="108" width="128" height="88"/>
+        <element name="Professor" positionX="-9" positionY="36" width="128" height="133"/>
+        <element name="Student" positionX="-9" positionY="72" width="128" height="133"/>
+    </elements>
+</model>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E28CD3C28DBE2F8000F131F /* StudentListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E28CD3B28DBE2F7000F131F /* StudentListTableViewCell.swift */; };
 		5E321E2528D608C900BCA56F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E321E2428D608C900BCA56F /* AppDelegate.swift */; };
 		5E321E2728D608C900BCA56F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E321E2628D608C900BCA56F /* SceneDelegate.swift */; };
 		5E321E2928D608C900BCA56F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E321E2828D608C900BCA56F /* ViewController.swift */; };
@@ -17,9 +18,19 @@
 		5E321E4328D60FF300BCA56F /* UITextfieldDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E321E4228D60FF300BCA56F /* UITextfieldDesignable.swift */; };
 		5E321E4728D6101400BCA56F /* UIButtonDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E321E4628D6101400BCA56F /* UIButtonDesignable.swift */; };
 		5E5543B228DAA1A000DB83E5 /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5543B128DAA1A000DB83E5 /* StudentViewController.swift */; };
+		5E60F87828DE580E00482BB2 /* Bonus+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E60F87228DE580D00482BB2 /* Bonus+CoreDataClass.swift */; };
+		5E60F87928DE580E00482BB2 /* Bonus+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E60F87328DE580D00482BB2 /* Bonus+CoreDataProperties.swift */; };
+		5E60F87A28DE580E00482BB2 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E60F87428DE580D00482BB2 /* Student+CoreDataClass.swift */; };
+		5E60F87B28DE580E00482BB2 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E60F87528DE580D00482BB2 /* Student+CoreDataProperties.swift */; };
+		5E60F87C28DE580E00482BB2 /* Professor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E60F87628DE580D00482BB2 /* Professor+CoreDataClass.swift */; };
+		5E60F87D28DE580E00482BB2 /* Professor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E60F87728DE580D00482BB2 /* Professor+CoreDataProperties.swift */; };
+		5EA9C0FC28DD2ECC00E125E5 /* FiekPortal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EA9C0FA28DD2ECC00E125E5 /* FiekPortal.xcdatamodeld */; };
+		5EA9C11F28DD5C9D00E125E5 /* InfoAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA9C11E28DD5C9C00E125E5 /* InfoAlert.swift */; };
+		5EFF0D3528DE388F00729AD3 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF0D3428DE388F00729AD3 /* DatabaseHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E28CD3B28DBE2F7000F131F /* StudentListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListTableViewCell.swift; sourceTree = "<group>"; };
 		5E321E2128D608C900BCA56F /* FIEK Portal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FIEK Portal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E321E2428D608C900BCA56F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E321E2628D608C900BCA56F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +47,15 @@
 		5E321E4228D60FF300BCA56F /* UITextfieldDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextfieldDesignable.swift; sourceTree = "<group>"; };
 		5E321E4628D6101400BCA56F /* UIButtonDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonDesignable.swift; sourceTree = "<group>"; };
 		5E5543B128DAA1A000DB83E5 /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
+		5E60F87228DE580D00482BB2 /* Bonus+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bonus+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5E60F87328DE580D00482BB2 /* Bonus+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bonus+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5E60F87428DE580D00482BB2 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5E60F87528DE580D00482BB2 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5E60F87628DE580D00482BB2 /* Professor+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Professor+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5E60F87728DE580D00482BB2 /* Professor+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Professor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5EA9C0FB28DD2ECC00E125E5 /* FiekPortal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FiekPortal.xcdatamodel; sourceTree = "<group>"; };
+		5EA9C11E28DD5C9C00E125E5 /* InfoAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAlert.swift; sourceTree = "<group>"; };
+		5EFF0D3428DE388F00729AD3 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +88,7 @@
 		5E321E2328D608C900BCA56F /* FIEK Portal */ = {
 			isa = PBXGroup;
 			children = (
+				5EA9C0AE28DD0E8400E125E5 /* Models */,
 				5E321E4128D60FB000BCA56F /* Designables */,
 				5E321E3928D6098A00BCA56F /* Fonts */,
 				5E321E2428D608C900BCA56F /* AppDelegate.swift */,
@@ -79,6 +100,10 @@
 				5E321E3228D608DA00BCA56F /* Info.plist */,
 				5E321E3E28D609D900BCA56F /* Colors.xcassets */,
 				5E5543B128DAA1A000DB83E5 /* StudentViewController.swift */,
+				5E28CD3B28DBE2F7000F131F /* StudentListTableViewCell.swift */,
+				5EA9C0FA28DD2ECC00E125E5 /* FiekPortal.xcdatamodeld */,
+				5EA9C11E28DD5C9C00E125E5 /* InfoAlert.swift */,
+				5EFF0D3428DE388F00729AD3 /* DatabaseHelper.swift */,
 			);
 			path = "FIEK Portal";
 			sourceTree = "<group>";
@@ -101,6 +126,27 @@
 				5E321E4628D6101400BCA56F /* UIButtonDesignable.swift */,
 			);
 			path = Designables;
+			sourceTree = "<group>";
+		};
+		5E60F87F28DE582000482BB2 /* Coredata  */ = {
+			isa = PBXGroup;
+			children = (
+				5E60F87228DE580D00482BB2 /* Bonus+CoreDataClass.swift */,
+				5E60F87328DE580D00482BB2 /* Bonus+CoreDataProperties.swift */,
+				5E60F87428DE580D00482BB2 /* Student+CoreDataClass.swift */,
+				5E60F87528DE580D00482BB2 /* Student+CoreDataProperties.swift */,
+				5E60F87628DE580D00482BB2 /* Professor+CoreDataClass.swift */,
+				5E60F87728DE580D00482BB2 /* Professor+CoreDataProperties.swift */,
+			);
+			path = "Coredata ";
+			sourceTree = "<group>";
+		};
+		5EA9C0AE28DD0E8400E125E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5E60F87F28DE582000482BB2 /* Coredata  */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,12 +220,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA9C0FC28DD2ECC00E125E5 /* FiekPortal.xcdatamodeld in Sources */,
 				5E5543B228DAA1A000DB83E5 /* StudentViewController.swift in Sources */,
 				5E321E2928D608C900BCA56F /* ViewController.swift in Sources */,
+				5E60F87A28DE580E00482BB2 /* Student+CoreDataClass.swift in Sources */,
 				5E321E2528D608C900BCA56F /* AppDelegate.swift in Sources */,
+				5E60F87C28DE580E00482BB2 /* Professor+CoreDataClass.swift in Sources */,
+				5EFF0D3528DE388F00729AD3 /* DatabaseHelper.swift in Sources */,
+				5E60F87D28DE580E00482BB2 /* Professor+CoreDataProperties.swift in Sources */,
+				5E60F87B28DE580E00482BB2 /* Student+CoreDataProperties.swift in Sources */,
 				5E321E2728D608C900BCA56F /* SceneDelegate.swift in Sources */,
+				5EA9C11F28DD5C9D00E125E5 /* InfoAlert.swift in Sources */,
+				5E60F87928DE580E00482BB2 /* Bonus+CoreDataProperties.swift in Sources */,
 				5E321E4728D6101400BCA56F /* UIButtonDesignable.swift in Sources */,
 				5E321E4328D60FF300BCA56F /* UITextfieldDesignable.swift in Sources */,
+				5E60F87828DE580E00482BB2 /* Bonus+CoreDataClass.swift in Sources */,
+				5E28CD3C28DBE2F8000F131F /* StudentListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +437,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5EA9C0FA28DD2ECC00E125E5 /* FiekPortal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5EA9C0FB28DD2ECC00E125E5 /* FiekPortal.xcdatamodel */,
+			);
+			currentVersion = 5EA9C0FB28DD2ECC00E125E5 /* FiekPortal.xcdatamodel */;
+			path = FiekPortal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5E321E1928D608C900BCA56F /* Project object */;
 }

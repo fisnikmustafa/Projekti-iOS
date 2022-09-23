@@ -8,22 +8,35 @@
 import UIKit
 
 class StudentViewController: UIViewController, UITableViewDataSource,  UITableViewDelegate {
+
+    let dbHelper = DatabaseHelper()
+    var studentItems: [Student]?
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        studentItems = dbHelper.fetchStudents()
+        // Do any additional setup after loading the view.
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return (studentItems?.count)!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "studentCellId", for: indexPath)
+        let student = studentItems![indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "studentCellId", for: indexPath) as! StudentListTableViewCell
+        
+        cell.nameLabel.text = student.name
+        cell.firstClassLabel.text = String(student.firstCourseAttendance)
+        cell.secondClassLabel.text = String(student.secondCourseAttendance)
+        cell.projectLabel.text = String(student.projectPoints)
         
         return cell
     }
     
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    
     
 
     /*
