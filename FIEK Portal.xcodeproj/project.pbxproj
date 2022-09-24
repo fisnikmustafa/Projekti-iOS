@@ -24,6 +24,7 @@
 		5E60F87B28DE580E00482BB2 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E60F87528DE580D00482BB2 /* Student+CoreDataProperties.swift */; };
 		5E60F87C28DE580E00482BB2 /* Professor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E60F87628DE580D00482BB2 /* Professor+CoreDataClass.swift */; };
 		5E60F87D28DE580E00482BB2 /* Professor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E60F87728DE580D00482BB2 /* Professor+CoreDataProperties.swift */; };
+		5E6F449A28DE9C180011AC60 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F449928DE9C180011AC60 /* HomeViewController.swift */; };
 		5EA9C0FC28DD2ECC00E125E5 /* FiekPortal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EA9C0FA28DD2ECC00E125E5 /* FiekPortal.xcdatamodeld */; };
 		5EA9C11F28DD5C9D00E125E5 /* InfoAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA9C11E28DD5C9C00E125E5 /* InfoAlert.swift */; };
 		5EFF0D3528DE388F00729AD3 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF0D3428DE388F00729AD3 /* DatabaseHelper.swift */; };
@@ -53,6 +54,7 @@
 		5E60F87528DE580D00482BB2 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5E60F87628DE580D00482BB2 /* Professor+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Professor+CoreDataClass.swift"; sourceTree = "<group>"; };
 		5E60F87728DE580D00482BB2 /* Professor+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Professor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5E6F449928DE9C180011AC60 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5EA9C0FB28DD2ECC00E125E5 /* FiekPortal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FiekPortal.xcdatamodel; sourceTree = "<group>"; };
 		5EA9C11E28DD5C9C00E125E5 /* InfoAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAlert.swift; sourceTree = "<group>"; };
 		5EFF0D3428DE388F00729AD3 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				5EA9C0FA28DD2ECC00E125E5 /* FiekPortal.xcdatamodeld */,
 				5EA9C11E28DD5C9C00E125E5 /* InfoAlert.swift */,
 				5EFF0D3428DE388F00729AD3 /* DatabaseHelper.swift */,
+				5E6F449928DE9C180011AC60 /* HomeViewController.swift */,
 			);
 			path = "FIEK Portal";
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				5E321E2528D608C900BCA56F /* AppDelegate.swift in Sources */,
 				5E60F87C28DE580E00482BB2 /* Professor+CoreDataClass.swift in Sources */,
 				5EFF0D3528DE388F00729AD3 /* DatabaseHelper.swift in Sources */,
+				5E6F449A28DE9C180011AC60 /* HomeViewController.swift in Sources */,
 				5E60F87D28DE580E00482BB2 /* Professor+CoreDataProperties.swift in Sources */,
 				5E60F87B28DE580E00482BB2 /* Student+CoreDataProperties.swift in Sources */,
 				5E321E2728D608C900BCA56F /* SceneDelegate.swift in Sources */,

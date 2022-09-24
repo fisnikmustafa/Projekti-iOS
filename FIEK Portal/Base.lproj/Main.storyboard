@@ -127,39 +127,144 @@
             </objects>
             <point key="canvasLocation" x="531.8840579710145" y="103.53260869565219"/>
         </scene>
-        <!--Orari-->
-        <scene sceneID="19h-ym-b2j">
-            <objects>
-                <viewController id="Pn1-2r-F0Y" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LLx-5Y-IsL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="X0u-Eu-m7o"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Orari" image="clock" catalog="system" id="aQ1-fJ-ylj"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3yU-m2-cUM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2526" y="405"/>
-        </scene>
-        <!--Profili-->
+        <!--B A L L I N A-->
         <scene sceneID="BWb-Cm-oCI">
             <objects>
-                <viewController id="i8a-Yq-h9z" sceneMemberID="viewController">
+                <viewController id="i8a-Yq-h9z" customClass="HomeViewController" customModule="FIEK_Portal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XWu-nn-dso">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LRg-Lq-KLA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="143"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xad-g6-bhZ">
+                                        <rect key="frame" x="24.666666666666657" y="23" width="365" height="104"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pershendetje," textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgH-ed-ves">
+                                                <rect key="frame" x="0.0" y="0.0" width="197" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="41" id="4yA-PG-7qP"/>
+                                                    <constraint firstAttribute="width" constant="197" id="lVQ-Ll-Vbk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="30"/>
+                                                <color key="textColor" name="Secondary Color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsF-bk-BqT">
+                                                <rect key="frame" x="0.0" y="49" width="365" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="365" id="0I4-S1-lof"/>
+                                                    <constraint firstAttribute="height" constant="55" id="so1-LT-5m8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="40"/>
+                                                <color key="textColor" name="Icon Color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="Primary Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="3iD-Wb-JLl"/>
+                                    <constraint firstItem="Xad-g6-bhZ" firstAttribute="top" secondItem="LRg-Lq-KLA" secondAttribute="top" constant="23" id="SHX-gE-4Am"/>
+                                    <constraint firstItem="Xad-g6-bhZ" firstAttribute="centerX" secondItem="LRg-Lq-KLA" secondAttribute="centerX" id="u75-6t-0ce"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UP-logo" translatesAutoresizingMaskIntoConstraints="NO" id="ikt-Zv-IKm">
+                                <rect key="frame" x="117" y="216" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="AaX-sj-eZO"/>
+                                    <constraint firstAttribute="width" constant="180" id="qPz-We-RBQ"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="u7F-Ny-ifg">
+                                <rect key="frame" x="56" y="423" width="302" height="94"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lendet e juaja per kete semester:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrn-rZ-YKa">
+                                        <rect key="frame" x="0.0" y="0.0" width="302" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="3zQ-6C-0E8"/>
+                                            <constraint firstAttribute="width" constant="302" id="Cm7-Uv-D0A"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="19"/>
+                                        <color key="textColor" name="Secondary Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. First course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivC-1I-rOt">
+                                        <rect key="frame" x="0.0" y="34" width="200" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="Z4Q-wg-5az"/>
+                                            <constraint firstAttribute="width" constant="200" id="moy-2B-IUH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                        <color key="textColor" name="Secondary Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Second course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCQ-hG-IIk">
+                                        <rect key="frame" x="0.0" y="68" width="200" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="agN-eM-e1D"/>
+                                            <constraint firstAttribute="height" constant="26" id="jDS-uW-cDq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                        <color key="textColor" name="Secondary Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="3UE-6n-EhL">
+                                <rect key="frame" x="56" y="562" width="302.33333333333331" height="26"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numri i studenteve tuaj:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2J-Xk-76T">
+                                        <rect key="frame" x="0.0" y="0.0" width="218.33333333333334" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="0MF-hE-7uD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="19"/>
+                                        <color key="textColor" name="Secondary Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyJ-fy-baA">
+                                        <rect key="frame" x="245.33333333333331" y="0.0" width="57" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="57" id="AbT-gA-9NZ"/>
+                                            <constraint firstAttribute="height" constant="26" id="RAh-OW-SJa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                        <color key="textColor" name="Secondary Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="LIL-GN-8LP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LRg-Lq-KLA" firstAttribute="leading" secondItem="LIL-GN-8LP" secondAttribute="leading" id="0X2-Qt-mQM"/>
+                            <constraint firstItem="3UE-6n-EhL" firstAttribute="centerX" secondItem="XWu-nn-dso" secondAttribute="centerX" id="DXN-2a-as3"/>
+                            <constraint firstItem="LRg-Lq-KLA" firstAttribute="top" secondItem="LIL-GN-8LP" secondAttribute="top" id="IAA-Xj-nwq"/>
+                            <constraint firstItem="3UE-6n-EhL" firstAttribute="top" secondItem="u7F-Ny-ifg" secondAttribute="bottom" constant="45" id="KAX-ue-cj9"/>
+                            <constraint firstItem="LRg-Lq-KLA" firstAttribute="trailing" secondItem="LIL-GN-8LP" secondAttribute="trailing" id="MZt-LL-4zq"/>
+                            <constraint firstItem="ikt-Zv-IKm" firstAttribute="centerX" secondItem="XWu-nn-dso" secondAttribute="centerX" id="Vko-Ym-Ciw"/>
+                            <constraint firstItem="u7F-Ny-ifg" firstAttribute="centerX" secondItem="XWu-nn-dso" secondAttribute="centerX" id="afj-Sa-uZD"/>
+                            <constraint firstItem="u7F-Ny-ifg" firstAttribute="top" secondItem="ikt-Zv-IKm" secondAttribute="bottom" constant="27" id="gAS-wp-emU"/>
+                            <constraint firstItem="ikt-Zv-IKm" firstAttribute="top" secondItem="LRg-Lq-KLA" secondAttribute="bottom" constant="29" id="jYz-sE-Lpm"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profili" image="person" catalog="system" id="J9B-FD-cAN"/>
+                    <navigationItem key="navigationItem" title="B A L L I N A" id="UTC-BM-QXq"/>
+                    <connections>
+                        <outlet property="firstCourse" destination="ivC-1I-rOt" id="Twe-ns-Pop"/>
+                        <outlet property="numberOfStudents" destination="iyJ-fy-baA" id="6FG-9n-HWt"/>
+                        <outlet property="professorName" destination="wsF-bk-BqT" id="mP9-eW-qjp"/>
+                        <outlet property="secondCourse" destination="VCQ-hG-IIk" id="sWB-kY-LbP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9WG-po-CxZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3686" y="418"/>
+            <point key="canvasLocation" x="4592.753623188406" y="417.39130434782612"/>
         </scene>
-        <!--S T U D E N T S-->
+        <!--S T U D E N T E T-->
         <scene sceneID="11s-FO-zkb">
             <objects>
                 <viewController storyboardIdentifier="studentsController" id="sDL-ky-jfT" customClass="StudentViewController" customModule="FIEK_Portal" customModuleProvider="target" sceneMemberID="viewController">
@@ -320,7 +425,7 @@
                             <constraint firstItem="7Aw-pY-Mgz" firstAttribute="bottom" secondItem="oDs-hq-3Or" secondAttribute="bottom" id="zyh-uT-8iz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="S T U D E N T S" id="Ffn-1T-yV0">
+                    <navigationItem key="navigationItem" title="S T U D E N T E T" id="Ffn-1T-yV0">
                         <barButtonItem key="rightBarButtonItem" image="gearshape" catalog="system" id="fyS-CU-OY0">
                             <color key="tintColor" name="Icon Color"/>
                         </barButtonItem>
@@ -329,22 +434,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Egp-s7-gQq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3431.884057971015" y="-292.66304347826087"/>
-        </scene>
-        <!--Konsultimet-->
-        <scene sceneID="oSz-FO-9bA">
-            <objects>
-                <viewController id="4RT-C1-cAi" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iXV-8l-pHe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="qzH-9j-1JU"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Konsultimet" image="bell" catalog="system" id="62q-T0-JK6"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vRT-jV-QM8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4586.9565217391309" y="-315.48913043478262"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Cyh-kP-WrW">
@@ -359,9 +448,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="ceA-Uu-Jq8" kind="relationship" relationship="viewControllers" id="n1d-Im-7HC"/>
-                        <segue destination="Pn1-2r-F0Y" kind="relationship" relationship="viewControllers" id="XSB-gX-m82"/>
-                        <segue destination="4RT-C1-cAi" kind="relationship" relationship="viewControllers" id="fWO-xb-sFP"/>
-                        <segue destination="i8a-Yq-h9z" kind="relationship" relationship="viewControllers" id="yHX-rd-DPV"/>
+                        <segue destination="Dfi-ta-wvS" kind="relationship" relationship="viewControllers" id="yHX-rd-DPV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N3w-rf-HZm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -392,6 +479,30 @@
             </objects>
             <point key="canvasLocation" x="2524.6376811594205" y="-292.66304347826087"/>
         </scene>
+        <!--Ballina-->
+        <scene sceneID="4pt-jA-B3G">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dfi-ta-wvS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ballina" image="house" catalog="system" id="J9B-FD-cAN" userLabel="Ballina"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rVP-Yy-bzO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="Primary Color"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
+                            <color key="textColor" name="Secondary Color"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="i8a-Yq-h9z" kind="relationship" relationship="rootViewController" id="4Nv-YX-eIk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fM8-K9-dTi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3685.507246376812" y="417.39130434782612"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="8GE-nt-8pw">
@@ -405,11 +516,10 @@
         </designable>
     </designables>
     <resources>
-        <image name="bell" catalog="system" width="128" height="124"/>
-        <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="UP-logo" width="300" height="299"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
-        <image name="person" catalog="system" width="128" height="117"/>
         <namedColor name="Icon Color">
             <color red="0.14117647058823529" green="0.23137254901960785" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

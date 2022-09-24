@@ -31,8 +31,15 @@ class ViewController: UIViewController {
     @IBAction func didTapLogin(_ sender: UIButton) {
         professorItems = dbHelper.fetchProfessor(username: usernameField.text!, password: passwordField.text!)
         
+    
+        
         if((professorItems?.count)! > 0) {
             let vc = storyboard?.instantiateViewController(identifier: "tabBarController") as! UITabBarController
+            let navVc = vc.viewControllers![1] as! UINavigationController
+            let homeVc = navVc.topViewController as! HomeViewController
+            
+            homeVc.activeProfessor = professorItems![0]
+            
             vc.modalPresentationStyle = .fullScreen
             
             present(vc, animated: true)
