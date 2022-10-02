@@ -523,6 +523,9 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="containerView" destination="SZd-Y1-i3L" id="acn-El-WFc"/>
+                                            <outlet property="courseLabel" destination="8NF-FJ-j4C" id="E5y-mU-5BQ"/>
+                                            <outlet property="pointsLabel" destination="kDY-W9-iky" id="dp0-dx-gj2"/>
+                                            <outlet property="studentLabel" destination="x9T-Uv-wRR" id="zcv-Mc-MpA"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -549,6 +552,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="djW-fg-hXA" id="qgE-AQ-5Oa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cui-V1-TRm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

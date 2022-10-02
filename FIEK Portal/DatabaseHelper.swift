@@ -59,9 +59,19 @@ class DatabaseHelper {
     }
     
     
-    func createBonusItem(student: Student, course: String, value: Int64, customAlert: InfoAlert, viewController: UIViewController){
+    func createBonusItem(professor: Professor, studentName: String, course: String, value: Int64, customAlert: InfoAlert, viewController: UIViewController){
+       
+        if(!validateFields(professor: professor, studentName: studentName, courseName: course)){
+            customAlert.showAlert(with: "Invalid entries!", message: "Make sure you type an existing student and an existing course!\nPlease, try again!", on: viewController)
+            return
+        }
+        
         let newItem = Bonus(context: context)
-        newItem.student = student
+        for student in professor.students! {
+            if ((student as! Student).name == studentName) {
+                newItem.student = (student as! Student)
+            }
+        }
         newItem.course = course
         newItem.value = value
         
@@ -95,19 +105,33 @@ class DatabaseHelper {
         }
     }
     
+    func validateFields(professor: Professor, studentName: String, courseName: String) -> Bool{
+        for student in professor.students! {
+            if ((student as! Student).name == studentName) {
+                if(courseName == professor.firstCourse || courseName == professor.secondCourse){
+                    return true
+                }
+            }
+        }
+        return false
+    }
     
     
+    //-----------------------
     func clearDatabase(){
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Student")
         let fetchRequest1 = NSFetchRequest<NSFetchRequestResult>(entityName: "Professor")
+        let fetchRequest2 = NSFetchRequest<NSFetchRequestResult>(entityName: "Bonus")
 
         // Create Batch Delete Request
         let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
         let batchDeleteRequest1 = NSBatchDeleteRequest(fetchRequest: fetchRequest1)
+        let batchDeleteRequest2 = NSBatchDeleteRequest(fetchRequest: fetchRequest2)
 
         do {
             try context.execute(batchDeleteRequest)
             try context.execute(batchDeleteRequest1)
+            try context.execute(batchDeleteRequest2)
         } catch {
             // Error Handling
         }

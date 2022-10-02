@@ -35,10 +35,14 @@ class ViewController: UIViewController {
         
         if((professorItems?.count)! > 0) {
             let vc = storyboard?.instantiateViewController(identifier: "tabBarController") as! UITabBarController
-            let navVc = vc.viewControllers![1] as! UINavigationController
-            let homeVc = navVc.topViewController as! HomeViewController
             
+            let homeNavVc = vc.viewControllers![1] as! UINavigationController
+            let homeVc = homeNavVc.topViewController as! HomeViewController
             homeVc.activeProfessor = professorItems![0]
+            
+            let bonusNavVc = vc.viewControllers![2] as! UINavigationController
+            let bonusVc = bonusNavVc.topViewController as! BonusViewController
+            bonusVc.activeProfessor = professorItems![0]
             
             vc.modalPresentationStyle = .fullScreen
             

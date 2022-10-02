@@ -10,8 +10,9 @@ import UIKit
 class BonusTableCell: UITableViewCell{
     
     @IBOutlet weak var containerView: UIView!
-    
-    let dbHelper = DatabaseHelper()
+    @IBOutlet weak var studentLabel: UILabel!
+    @IBOutlet weak var courseLabel: UILabel!
+    @IBOutlet weak var pointsLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,23 +25,37 @@ class BonusTableCell: UITableViewCell{
 
 class BonusViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var tableView: UITableView!
+    var bonusItems: [Bonus]?
+    
+    
+    let dbHelper = DatabaseHelper()
+    var activeProfessor: Professor?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
+        getAllItems()
+        // Do any additional setup after loading the view.
+    }
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return (bonusItems?.count)!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let item = bonusItems![indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "bonusCell", for: indexPath) as! BonusTableCell
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "bonusCell", for: indexPath)
+        cell.studentLabel.text = item.student?.name
+        cell.courseLabel.text = item.course
+        cell.pointsLabel.text = "+" + String(item.value)
         
         return cell
     }
     
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
     
     @IBAction func didTapLogin(_ sender: UIBarButtonItem) {
@@ -84,13 +99,20 @@ class BonusViewController: UIViewController, UITableViewDataSource, UITableViewD
                 return
             }
             
-
+            self.dbHelper.createBonusItem(professor: self.activeProfessor!, studentName: name, course: course, value: Int64(grade)!, customAlert: customAlert, viewController: self)
+            self.getAllItems()
         }))
         
         present(alert, animated: true)
     }
     
-    
+    func getAllItems(){
+        bonusItems = dbHelper.fetchBonuses()
+        
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
     
 
     /*
