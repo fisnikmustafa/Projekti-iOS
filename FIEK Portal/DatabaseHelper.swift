@@ -12,6 +12,7 @@ import CoreData
 class DatabaseHelper {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    let customAlert = InfoAlert()
     
     
     func fetchProfessor(username: String, password: String) -> [Professor]{
@@ -59,7 +60,7 @@ class DatabaseHelper {
     }
     
     
-    func createBonusItem(professor: Professor, studentName: String, course: String, value: Int64, customAlert: InfoAlert, viewController: UIViewController){
+    func createBonusItem(professor: Professor, studentName: String, course: String, value: Int64, viewController: UIViewController){
        
         if(!validateFields(professor: professor, studentName: studentName, courseName: course)){
             customAlert.showAlert(with: "Invalid entries!", message: "Make sure you type an existing student and an existing course!\nPlease, try again!", on: viewController)
@@ -83,25 +84,36 @@ class DatabaseHelper {
         
     }
     
-    func deleteBonusItem(item: Bonus){
+    func deleteBonusItem(item: Bonus, viewController: UIViewController){
         context.delete(item)
         
         do{
             try context.save()
         } catch{
-            //error
+            customAlert.showAlert(with: "Error!", message: "Could not delete the item!", on: viewController)
         }
     }
     
-    func updateBonusItem(item: Bonus, newStudent: Student, newCourse: String, newValue: Int64){
-        item.student = newStudent
+    func updateBonusItem(item: Bonus, activeProfessor: Professor, newStudent: String, newCourse: String, newValue: Int64, viewController: UIViewController){
+        
+        if(!validateFields(professor: activeProfessor, studentName: newStudent, courseName: newCourse)){
+            customAlert.showAlert(with: "Invalid entries!", message: "Make sure you type an existing student and an existing course!\nPlease, try again!", on: viewController)
+            return
+        }
+        
+        for student in activeProfessor.students! {
+            if ((student as! Student).name == newStudent) {
+                item.student = (student as! Student)
+            }
+        }
+        
         item.course = newCourse
         item.value = newValue
         
         do{
             try context.save()
         } catch{
-            //error
+            customAlert.showAlert(with: "Could not edit the item!", message: "Make sure you type an existing student and an existing course!\nPlease, try again!", on: viewController)
         }
     }
     
