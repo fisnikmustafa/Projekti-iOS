@@ -1,7 +1,7 @@
 //
 //  DatabaseHelper.swift
 //  FIEK Portal
-//
+// 
 //  Created by Fisnik on 23/09/2022.
 //
 
@@ -25,7 +25,7 @@ class DatabaseHelper {
             
             items = try context.fetch(request)
         } catch{
-            //
+            // to do: handling
         }
         
         return items!
@@ -37,10 +37,62 @@ class DatabaseHelper {
         do{
             items = try context.fetch(Student.fetchRequest())
         } catch{
-            
+          // to do: handling
         }
         
         return items!
+    }
+    
+    
+    //functions for BONUS items:
+    func fetchBonuses() -> [Bonus]{
+        var items: [Bonus]?
+        
+        do{
+            items = try context.fetch(Bonus.fetchRequest())
+        } catch{
+          // to do: handling
+        }
+        
+        return items!
+        
+    }
+    
+    
+    func createBonusItem(student: Student, course: String, value: Int64, customAlert: InfoAlert, viewController: UIViewController){
+        let newItem = Bonus(context: context)
+        newItem.student = student
+        newItem.course = course
+        newItem.value = value
+        
+        do{
+            try context.save()
+        } catch{
+            customAlert.showAlert(with: "Could not add the item!", message: "Make sure you type an existing student and an existing course!\nPlease, try again!", on: viewController)
+        }
+        
+    }
+    
+    func deleteBonusItem(item: Bonus){
+        context.delete(item)
+        
+        do{
+            try context.save()
+        } catch{
+            //error
+        }
+    }
+    
+    func updateBonusItem(item: Bonus, newStudent: Student, newCourse: String, newValue: Int64){
+        item.student = newStudent
+        item.course = newCourse
+        item.value = newValue
+        
+        do{
+            try context.save()
+        } catch{
+            //error
+        }
     }
     
     

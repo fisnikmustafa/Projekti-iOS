@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E1B9F9A28E8EF98004C5596 /* IsNumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B9F9928E8EF98004C5596 /* IsNumberExtension.swift */; };
 		5E28CD3C28DBE2F8000F131F /* StudentListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E28CD3B28DBE2F7000F131F /* StudentListTableViewCell.swift */; };
 		5E321E2528D608C900BCA56F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E321E2428D608C900BCA56F /* AppDelegate.swift */; };
 		5E321E2728D608C900BCA56F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E321E2628D608C900BCA56F /* SceneDelegate.swift */; };
@@ -25,12 +26,15 @@
 		5E60F87C28DE580E00482BB2 /* Professor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E60F87628DE580D00482BB2 /* Professor+CoreDataClass.swift */; };
 		5E60F87D28DE580E00482BB2 /* Professor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E60F87728DE580D00482BB2 /* Professor+CoreDataProperties.swift */; };
 		5E6F449A28DE9C180011AC60 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F449928DE9C180011AC60 /* HomeViewController.swift */; };
+		5E819B6928DFD93C00B11AF1 /* ShadowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E819B6828DFD93C00B11AF1 /* ShadowExtension.swift */; };
+		5E819B6C28DFDB2A00B11AF1 /* BonusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E819B6B28DFDB2A00B11AF1 /* BonusViewController.swift */; };
 		5EA9C0FC28DD2ECC00E125E5 /* FiekPortal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EA9C0FA28DD2ECC00E125E5 /* FiekPortal.xcdatamodeld */; };
 		5EA9C11F28DD5C9D00E125E5 /* InfoAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA9C11E28DD5C9C00E125E5 /* InfoAlert.swift */; };
 		5EFF0D3528DE388F00729AD3 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF0D3428DE388F00729AD3 /* DatabaseHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E1B9F9928E8EF98004C5596 /* IsNumberExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsNumberExtension.swift; sourceTree = "<group>"; };
 		5E28CD3B28DBE2F7000F131F /* StudentListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListTableViewCell.swift; sourceTree = "<group>"; };
 		5E321E2128D608C900BCA56F /* FIEK Portal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FIEK Portal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E321E2428D608C900BCA56F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 		5E60F87628DE580D00482BB2 /* Professor+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Professor+CoreDataClass.swift"; sourceTree = "<group>"; };
 		5E60F87728DE580D00482BB2 /* Professor+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Professor+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5E6F449928DE9C180011AC60 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5E819B6828DFD93C00B11AF1 /* ShadowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowExtension.swift; sourceTree = "<group>"; };
+		5E819B6B28DFDB2A00B11AF1 /* BonusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonusViewController.swift; sourceTree = "<group>"; };
 		5EA9C0FB28DD2ECC00E125E5 /* FiekPortal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FiekPortal.xcdatamodel; sourceTree = "<group>"; };
 		5EA9C11E28DD5C9C00E125E5 /* InfoAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAlert.swift; sourceTree = "<group>"; };
 		5EFF0D3428DE388F00729AD3 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
@@ -90,6 +96,7 @@
 		5E321E2328D608C900BCA56F /* FIEK Portal */ = {
 			isa = PBXGroup;
 			children = (
+				5EF64D9228E910E40070F2A8 /* Extensions */,
 				5EA9C0AE28DD0E8400E125E5 /* Models */,
 				5E321E4128D60FB000BCA56F /* Designables */,
 				5E321E3928D6098A00BCA56F /* Fonts */,
@@ -107,6 +114,7 @@
 				5EA9C11E28DD5C9C00E125E5 /* InfoAlert.swift */,
 				5EFF0D3428DE388F00729AD3 /* DatabaseHelper.swift */,
 				5E6F449928DE9C180011AC60 /* HomeViewController.swift */,
+				5E819B6B28DFDB2A00B11AF1 /* BonusViewController.swift */,
 			);
 			path = "FIEK Portal";
 			sourceTree = "<group>";
@@ -150,6 +158,15 @@
 				5E60F87F28DE582000482BB2 /* Coredata  */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5EF64D9228E910E40070F2A8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5E819B6828DFD93C00B11AF1 /* ShadowExtension.swift */,
+				5E1B9F9928E8EF98004C5596 /* IsNumberExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E1B9F9A28E8EF98004C5596 /* IsNumberExtension.swift in Sources */,
 				5EA9C0FC28DD2ECC00E125E5 /* FiekPortal.xcdatamodeld in Sources */,
 				5E5543B228DAA1A000DB83E5 /* StudentViewController.swift in Sources */,
 				5E321E2928D608C900BCA56F /* ViewController.swift in Sources */,
@@ -236,6 +254,8 @@
 				5E321E2728D608C900BCA56F /* SceneDelegate.swift in Sources */,
 				5EA9C11F28DD5C9D00E125E5 /* InfoAlert.swift in Sources */,
 				5E60F87928DE580E00482BB2 /* Bonus+CoreDataProperties.swift in Sources */,
+				5E819B6928DFD93C00B11AF1 /* ShadowExtension.swift in Sources */,
+				5E819B6C28DFDB2A00B11AF1 /* BonusViewController.swift in Sources */,
 				5E321E4728D6101400BCA56F /* UIButtonDesignable.swift in Sources */,
 				5E321E4328D60FF300BCA56F /* UITextfieldDesignable.swift in Sources */,
 				5E60F87828DE580E00482BB2 /* Bonus+CoreDataClass.swift in Sources */,

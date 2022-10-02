@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // This function needs to be ran only the first time you open the app so that we already have data in the database:
-        // dbHelper.fillDatabase()
+        //dbHelper.fillDatabase()
     }
 
     
