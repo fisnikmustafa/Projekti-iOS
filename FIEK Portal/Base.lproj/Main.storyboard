@@ -425,11 +425,7 @@
                             <constraint firstItem="7Aw-pY-Mgz" firstAttribute="bottom" secondItem="oDs-hq-3Or" secondAttribute="bottom" id="zyh-uT-8iz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="S T U D E N T E T" id="Ffn-1T-yV0">
-                        <barButtonItem key="rightBarButtonItem" image="gearshape" catalog="system" id="fyS-CU-OY0">
-                            <color key="tintColor" name="Icon Color"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="S T U D E N T E T" id="Ffn-1T-yV0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Egp-s7-gQq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -667,7 +663,6 @@
     </designables>
     <resources>
         <image name="UP-logo" width="300" height="299"/>
-        <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>

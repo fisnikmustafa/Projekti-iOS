@@ -77,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E080121290893D500436C7D /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E28CD3B28DBE2F7000F131F /* StudentListTableViewCell.swift */,
+				5EA9C11E28DD5C9C00E125E5 /* InfoAlert.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
 		5E321E1828D608C900BCA56F = {
 			isa = PBXGroup;
 			children = (
@@ -98,23 +107,20 @@
 			children = (
 				5EF64D9228E910E40070F2A8 /* Extensions */,
 				5EA9C0AE28DD0E8400E125E5 /* Models */,
+				5E3563792907536500711583 /* Controllers */,
+				5E080121290893D500436C7D /* Custom Views */,
 				5E321E4128D60FB000BCA56F /* Designables */,
 				5E321E3928D6098A00BCA56F /* Fonts */,
 				5E321E2428D608C900BCA56F /* AppDelegate.swift */,
 				5E321E2628D608C900BCA56F /* SceneDelegate.swift */,
 				5E321E2828D608C900BCA56F /* ViewController.swift */,
-				5E321E2A28D608CA00BCA56F /* Main.storyboard */,
-				5E321E2D28D608D900BCA56F /* Assets.xcassets */,
-				5E321E2F28D608D900BCA56F /* LaunchScreen.storyboard */,
-				5E321E3228D608DA00BCA56F /* Info.plist */,
-				5E321E3E28D609D900BCA56F /* Colors.xcassets */,
-				5E5543B128DAA1A000DB83E5 /* StudentViewController.swift */,
-				5E28CD3B28DBE2F7000F131F /* StudentListTableViewCell.swift */,
-				5EA9C0FA28DD2ECC00E125E5 /* FiekPortal.xcdatamodeld */,
-				5EA9C11E28DD5C9C00E125E5 /* InfoAlert.swift */,
 				5EFF0D3428DE388F00729AD3 /* DatabaseHelper.swift */,
-				5E6F449928DE9C180011AC60 /* HomeViewController.swift */,
-				5E819B6B28DFDB2A00B11AF1 /* BonusViewController.swift */,
+				5E321E2A28D608CA00BCA56F /* Main.storyboard */,
+				5E321E2F28D608D900BCA56F /* LaunchScreen.storyboard */,
+				5E321E2D28D608D900BCA56F /* Assets.xcassets */,
+				5E321E3E28D609D900BCA56F /* Colors.xcassets */,
+				5EA9C0FA28DD2ECC00E125E5 /* FiekPortal.xcdatamodeld */,
+				5E321E3228D608DA00BCA56F /* Info.plist */,
 			);
 			path = "FIEK Portal";
 			sourceTree = "<group>";
@@ -137,6 +143,16 @@
 				5E321E4628D6101400BCA56F /* UIButtonDesignable.swift */,
 			);
 			path = Designables;
+			sourceTree = "<group>";
+		};
+		5E3563792907536500711583 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E5543B128DAA1A000DB83E5 /* StudentViewController.swift */,
+				5E6F449928DE9C180011AC60 /* HomeViewController.swift */,
+				5E819B6B28DFDB2A00B11AF1 /* BonusViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		5E60F87F28DE582000482BB2 /* Coredata  */ = {
