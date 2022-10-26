@@ -14,6 +14,18 @@ class DatabaseHelper {
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     let customAlert = InfoAlert()
     
+    func professorEntityIsEmpty() -> Bool{
+        var items: [Professor]?
+        
+        do{
+            items = try context.fetch(Professor.fetchRequest())
+            
+            return items?.count == 0
+        } catch let error as NSError{
+            print("Error: \(error.debugDescription)")
+            return true
+        }
+    }
     
     func fetchProfessor(username: String, password: String) -> [Professor]{
         var items: [Professor]?

@@ -1,6 +1,6 @@
 # FIEK Portal
 
-This iOS application is part of the Mobile Development class.
+This iOS application is part of the Mobile Development course.
  
 It was developed using Xcode 12.1 but it is also compatible with older versions down to Xcode 9.3; deployment target is set to iOS 14.1.  
 Swift and UIKit were used for development, and Coredata was used as the sole database.

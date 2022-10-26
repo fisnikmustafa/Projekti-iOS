@@ -23,8 +23,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // This function needs to be ran only the first time you open the app so that we already have data in the database:
-        //dbHelper.fillDatabase()
+        //Check if there's records in the device, if not -> fill the database
+        let emptyDb = dbHelper.professorEntityIsEmpty()
+        
+        if(emptyDb == true){
+            dbHelper.fillDatabase()
+        }
     }
 
     
