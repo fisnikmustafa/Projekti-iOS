@@ -18,6 +18,9 @@ Professor entity has a one-to-many relationship with a number of Students.
 Student entity has a relationship with a single Professor only and a one-to-many relationship with Bonus entity. 
 Bonus entity has a relationship with a single Student only.
 
+**NOTE:**
+When the app starts it will create one professor record and some students in the db in order to improvise an account.
+You can test the app by logging in with these credentials: (username: john.doe; password: fiek-2022).
 
 ## Screens
 
